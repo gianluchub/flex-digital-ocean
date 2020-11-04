@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.customer_logos {
+  list-style: none;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  /* height: 600px; */
+  background-color: yellow;
+  flex-wrap: wrap;
+}
+
+.customer_logos li {
+  flex-basis: 12%;
+  padding: 10px 20px;
+}
+
+.customer_logos li img {
+  width: 100%;
+}
+
+/* carousel */
+.carousel-top {
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.carousel-top figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightgreen;
+}
+
+.carousel-top a {
+  padding: 20px;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.carousel-top i {
+  font-size: 40px;
+}
+
+.carousel-bottom {
+  background: orange;
+}
+.carousel-bottom ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  /* height: 200px; */
+}
+.carousel-bottom li {
+  /* display: flex; */
+  padding: 10px 5px;
+}
+.carousel-bottom li:first-child {
+  align-self: flex-start;
+}
+.carousel-bottom li:nth-child(2) {
+  align-self: center;
+}
+.carousel-bottom li:last-child {
+  align-self: center;
+}
+
+@media screen and (max-width: 992px) {
+
+  .customer_logos li {
+    flex-basis: 27%;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+
+  .customer_logos li {
+    flex-basis: 45%;
+  }
+
+}
